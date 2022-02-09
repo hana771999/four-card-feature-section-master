@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&family=Ubuntu:ital@1&display=swap');
+
+*{
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.header{
+    line-height: 22px;
+    color: hsl(234, 12%, 34%);
+    width: 550px;
+    text-align: center;
+}
+.header p{
+    color:rgba(73, 70, 70, 0.5) ;
+}
+.header .gray{
+    color: hsl(234, 12%, 34%);
+    font-weight:100;
+}
+.allBox{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 450px;
+}
+.collum{
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
+}
+
+.container .box{
+    height: 180px;
+    width: 280px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5), 0 6px 6px rgba(0, 0, 0, 0.1);
+    box-sizing: 5px;
+    margin: 13px;
+    background-color: hsl(0, 0%, 98%);
+    padding-left: 20px;
+    padding-right: 20px;
+    line-height: 16px;
+
+
+}
+.container .box p{
+    color:rgba(73, 70, 70, 0.5) ;
+    font-size: 12px;
+    margin-top: -9px;
+    font-weight: 600;
+    
+
+}
+.container .box img{
+    width: 50px;
+    margin-left: auto;
+    display: block;
+    
+
+
+}
+.container .boxRed{
+    border-top: 4px solid hsl(0, 78%, 62%);
+    border-radius: 5px;
+}
+.container .boxLightBlue{
+    border-top: 4px solid  hsl(180, 62%, 55%);
+    border-radius: 5px;
+}
+.container .boxYellow{
+    border-top: 4px solid hsl(34, 97%, 64%);
+    border-radius: 5px;
+}
+.container .boxBlue{
+    border-top: 4px solid hsl(212, 86%, 64%);
+    border-radius: 5px;
+}
+
+
+@media (max-width:933px){
+    .container{
+        flex-direction: column;
+    }
+    .header{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .allBox{
+        flex-direction: column;
+        margin: 5px;
+        
+    }
+    .collum{
+        margin: 5px;
+    }
+    .container .box{
+        height: 200px;
+        width: 400px;
+    }
+
+}
+@media (max-width:445px){
+    .container{
+        flex-direction: column;
+    }
+    .header{
+        margin-top: 10px;
+        line-height: 35px;
+        width: 320px;
+        text-align: center;
+    }
+    .header p{
+        line-height: 22px;
+    }
+    .allBox{
+        flex-direction: column;
+        margin: 5px;
+        
+    }
+    .collum{
+        margin: 5px;
+    }
+    .container .box{
+        height: 150px;
+        width: 300px;
+    }
+
+}
+
+
